@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5227,
-      "sha256": "2d0402819d1352020ff213d616a521b956e474431a735383f9cdcc653f190ba8"
+      "bytes": 6489,
+      "sha256": "47737ab0d0e7480ef37830f1155549672eabab263938edf9ad76396db288c1ef"
     },
     {
       "path": "app/.dockerignore",
@@ -9280,9 +9280,14 @@
       "sha256": "4ed4f6adfa5a9571fb842e09aaad7c335f65d91b894f29ad0cc93d50f2f9b793"
     },
     {
+      "path": "docs/images/operations-dashboard-provided-20261009.png",
+      "bytes": 1536179,
+      "sha256": "cb9435da0b45ad8f31b1c407164d844354ec57e66bf1ada90743f391dc95b8bb"
+    },
+    {
       "path": "docs/从分销经历反推系统.md",
-      "bytes": 14490,
-      "sha256": "9456c8268b82c8a134d921b35ccc91d58854b954d8679f305278f4c23b965918"
+      "bytes": 15091,
+      "sha256": "ee00b81af1fd3845038a3b93ae7301dcb9ddbaa5f1cc7262b5df113c722b21e0"
     },
     {
       "path": "docs/代充与模型中转的风险说明.md",
@@ -9296,8 +9301,8 @@
     },
     {
       "path": "docs/发布包检查记录.md",
-      "bytes": 8168,
-      "sha256": "603e4b7691a94d11b1011ab11c2066f0b673ea6b16d674525f58ecdab994ad43"
+      "bytes": 9381,
+      "sha256": "faa49b88f712f2de7a7ab3f66ffdcb0a65172146cd5c8a6ee2f3ed0f2340c017"
     },
     {
       "path": "docs/开源范围与来源.md",
@@ -9306,8 +9311,8 @@
     },
     {
       "path": "docs/我的三天三夜.md",
-      "bytes": 35567,
-      "sha256": "d479036f1f4e03582c4b717b21321808b16db208cff1f2daafd35a6810251f3c"
+      "bytes": 38083,
+      "sha256": "a8aa44cdde17ff221b6b1205e33ed75973126ee48638e2cf53d9767a37407181"
     },
     {
       "path": "docs/接入手册/商品API接入操作手册.docx",
@@ -9343,6 +9348,11 @@
       "path": "docs/补充材料/README.md",
       "bytes": 912,
       "sha256": "7d40484830fd118ee84c9e0b76a2e9e46722218bc126e41b71fb362fb25f12e3"
+    },
+    {
+      "path": "docs/项目复盘与展示.md",
+      "bytes": 6958,
+      "sha256": "a5ae48d3dd99f44581b3bd80257f0f5a34956b25e56e0dea088ddaac8165b103"
     },
     {
       "path": "ops/auto-provision-reseller-domains.py",
