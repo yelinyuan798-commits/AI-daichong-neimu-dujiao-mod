@@ -21,6 +21,7 @@ import (
 	channelwiring "github.com/dujiao-next/internal/bootstrap/channelapi"
 	channeluserwiring "github.com/dujiao-next/internal/bootstrap/channeluser"
 	fulfillmentwiring "github.com/dujiao-next/internal/bootstrap/fulfillment"
+	merchantfulfillmentwiring "github.com/dujiao-next/internal/bootstrap/merchantfulfillment"
 	orderwiring "github.com/dujiao-next/internal/bootstrap/order"
 	paymentwiring "github.com/dujiao-next/internal/bootstrap/payment"
 	publicconfigwiring "github.com/dujiao-next/internal/bootstrap/publicconfig"
@@ -267,6 +268,9 @@ func SetupRouter(cfg *config.Config, c *container.Container) *gin.Engine {
 	}
 
 	apiV1 := r.Group("/api/v1")
+	if err := merchantfulfillmentwiring.Register(apiV1, c); err != nil {
+		panic(err)
+	}
 	registerStorefrontRoutes(apiV1, cfg, c, publicContentHandler, publicCatalogHandler, publicCategoryHandler, userResellerHandler, userResellerProductSettingHandler, userResellerFinanceHandler, userResellerOrderHandler, userApiCredentialHandler, userAuditLogHandler, userGiftCardHandler, publicMemberLevelHandler, userProfileHandler, userEmailHandler, userPasswordHandler, userVerifyHandler, userTelegramOIDCHandler, userTelegramHandler, userGoogleHandler, userLoginHandler, user2FAHandler, publicConfigHandler, userCartHandler, userOrderHandler, guestOrderHandler, orderPreviewHandler, orderCreateHandler, paymentLatestHandler, paymentWriteHandler, userWalletHandler, redisClient, loginRule, guestReadRule, guestWriteRule, giftCardRedeemRule)
 	registerUpstreamRoutes(apiV1, c, upstreamHandler, redisClient, upstreamAPIRule, callbackRule)
 	registerChannelRoutes(apiV1, c, channelHandler, channelMemberLevelHandler, channelGiftCardHandler, channelAffiliateHandler, channelTelegramBotHandler, channelWalletHandler, redisClient, channelAPIRule)
