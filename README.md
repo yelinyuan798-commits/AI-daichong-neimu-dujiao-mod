@@ -10,6 +10,8 @@
 
 做店铺时，重复咨询和售后接待也占用了不少时间。我把这部分需求继续做成了独立开源项目 [店小助 · UniversalECommerceBot](https://github.com/yelinyuan798-commits/UniversalECommerceBot)：先用默认客服接待，需要时再按商品设置介绍、价格和问答；可在工作台里填写 AI 服务信息、测试连接并保存，让普通回复更自然。不配置 AI 也能使用。
 
+![店小助：默认客服先用，AI 按需开启，按商品资料回复，复杂问题交给店主。连接店铺仍需登录和配置。](https://raw.githubusercontent.com/yelinyuan798-commits/UniversalECommerceBot/main/docs/images/merchant-benefits.png)
+
 两个项目目前独立运行，客服机器人没有接入本商城的订单、支付、卡密或订阅履约。使用方式和平台验证情况见[店小助补充说明](docs/补充材料/店小助客服机器人.md)。
 
 ## 项目近况 · 2026-10-09
